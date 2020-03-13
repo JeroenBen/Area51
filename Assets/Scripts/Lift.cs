@@ -13,7 +13,7 @@ public class Lift : MonoBehaviour {
 	}
 
 	private void CheckWincondition() {
-		if (winCondition.PlayerWins()) {
+		if (winCondition == null || winCondition.PlayerWins()) {
 			LevelManager.Instance.Player.Win();
 		}
 	}

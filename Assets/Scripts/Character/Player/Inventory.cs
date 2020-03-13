@@ -5,6 +5,7 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     public List<Item> characterItems = new List<Item>();
+    public List<int> beginItems;
     public ItemDatabase itemDatabase;
     public UIInventory inventoryUI;
     public GameObject DeathScreen;
@@ -35,8 +36,10 @@ public class Inventory : MonoBehaviour
     }
 
     private void Start() {
+        foreach (int id in beginItems) {
+            GiveItem(id);
+        }
 
-        GiveItem(7);
     }
 
     private void FixedUpdate() {
