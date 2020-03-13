@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : Character {
     public float walkspeed, runspeed, maxaboveground,
-        minairheight, slopeCorrection, airspeed, jumpforce, maxjumptime, jumpStart, toosteep=1000.0f, sphereCastRadius;
+        minairheight, slopeCorrection, airspeed, jumpforce, maxjumptime, jumpStart;
 
     public static Player main;
     public GameObject deathScreen, winScreen;
@@ -38,11 +38,6 @@ public class Player : Character {
     }
 
     public void move(float speed, Vector3 up, bool noVy) {
-        float angle = Vector3.Angle(Vector3.up, up);
-        if (angle>toosteep) {
-
-            return;
-        }
         Vector2 input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         //Corrects the Vector2, so it always has a magnitude of 1
         if (input.magnitude >= 1) {
@@ -64,13 +59,11 @@ public class Player : Character {
 
     public object GetRaycastHit(float maxDistance) {
         RaycastHit hit;
-        if(Physics.SphereCast(transform.position+Vector3.up*sphereCastRadius, sphereCastRadius, transform.TransformDirection(Vector3.down), out hit, GetHeight() / 2 + maxDistance)) {
+        if(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), out hit, GetHeight() / 2 + maxDistance)) {
             return hit;
         }
         return false;
     }
-
-
 
     public object GetRaycastHitAir() {
         return GetRaycastHit(minairheight);

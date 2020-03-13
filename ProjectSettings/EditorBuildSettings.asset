@@ -9,9 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: ccd9985bba5b342499123c5208ee13d8
   - enabled: 1
-    path: Assets/Scenes/idk.unity
-    guid: 2f3d4074407188e449da0f4c6e391093
-  - enabled: 1
     path: Assets/Scenes/TrumpLevel 1.unity
     guid: f05418876aa9a934fa580cc0f4f6f1f1
   - enabled: 1

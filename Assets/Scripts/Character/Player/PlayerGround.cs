@@ -42,8 +42,8 @@ public class PlayerGround : State {
             player.move(player.walkspeed, normal,false);
         }
 
-        float angle = Vector3.Angle(Vector3.up, normal);
-        if ((angle < player.toosteep) && Input.GetButton("Jump") && jumpTimer*Time.deltaTime>= player.jumpStart) {
+
+        if (Input.GetButton("Jump") && jumpTimer*Time.deltaTime>= player.jumpStart) {
             player.SetState(new PlayerJump(player));
         }
         if (Input.GetButton("Fire")) {

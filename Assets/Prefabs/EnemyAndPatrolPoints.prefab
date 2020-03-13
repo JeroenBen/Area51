@@ -12234,6 +12234,7 @@ MonoBehaviour:
   sound: {fileID: 0}
   speed: 60
   firerate: 14
+  itemid: 0
   isPlayerWeapon: 0
 --- !u!114 &114921889930957184
 MonoBehaviour:

@@ -125,7 +125,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawn: {fileID: 4851213491947362}
-  projectile: {fileID: 1402974318740670, guid: 2626bb1cdf097ea438654be6ca20b9cc, type: 2}
+  projectile: {fileID: 1987119616936312, guid: 3ec2fdb5ac6f8fc4487396c9b7781a08, type: 2}
+  audioSource: {fileID: 0}
+  sound: {fileID: 0}
   speed: 60
   firerate: 5
+  itemid: 5
   isPlayerWeapon: 1
