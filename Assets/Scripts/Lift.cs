@@ -30,6 +30,9 @@ public class Lift : MonoBehaviour {
 		if (Enemy.enemies != null) {
 			angry = Enemy.enemies.Exists(x => x.State is FollowPlayer);
 		}
+		if (angry) {
+			print("ENEMY IS ANGRY");
+		}
 		MoveDoors(angry);
 	}
 
