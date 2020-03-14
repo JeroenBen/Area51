@@ -4110,12 +4110,13 @@ GameObject:
   - component: {fileID: 4189394977800624}
   - component: {fileID: 33820007082590344}
   - component: {fileID: 23766180379929558}
+  - component: {fileID: 65572992460537562}
   m_Layer: 0
-  m_Name: polySurface1
+  m_Name: Deur
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &1562952935224124
 GameObject:
@@ -6891,12 +6892,13 @@ GameObject:
   - component: {fileID: 4033622810856870}
   - component: {fileID: 33214783264955102}
   - component: {fileID: 23675150001808830}
+  - component: {fileID: 65215635899397594}
   m_Layer: 0
-  m_Name: polySurface2
+  m_Name: Deur
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &1939846874106630
 GameObject:
@@ -7425,8 +7427,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1939389220276666}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.4058039, y: 0, z: -2.1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.928, y: 0, z: -2.1}
+  m_LocalScale: {x: 1.2, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4312295481718556}
   m_RootOrder: 1
@@ -8530,8 +8532,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1557440684023000}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.7728027, y: 0, z: -2.1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -2.311, y: 0, z: -2.1}
+  m_LocalScale: {x: 1.2, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4312295481718556}
   m_RootOrder: 0
@@ -10073,8 +10075,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1210530059596140}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 14.86, y: 0.5, z: 1.65}
   m_LocalScale: {x: 1.01, y: 1, z: 1}
   m_Children:
   - {fileID: 4908840390528412}
@@ -10157,7 +10159,7 @@ Transform:
   - {fileID: 4654853025320516}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!4 &4402490381344990
 Transform:
   m_ObjectHideFlags: 1
@@ -17162,6 +17164,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.99999994, z: 0.99999994}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65215635899397594
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1939389220276666}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0177788, y: 2, z: 0.15000024}
+  m_Center: {x: -0.4911093, y: 0, z: -0.00000005960466}
 --- !u!65 &65244091475261372
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -17210,6 +17224,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.2, y: 2.041306, z: 0.25}
   m_Center: {x: 0, y: -0.17934704, z: 0}
+--- !u!65 &65572992460537562
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1557440684023000}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3404249, y: 2, z: 0.15000024}
+  m_Center: {x: 0.66765213, y: 0, z: -0.00000005960466}
 --- !u!65 &65641653018026586
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -17474,6 +17500,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winCondition: {fileID: 114954508915665260}
+  doorL: {fileID: 1939389220276666}
+  doorR: {fileID: 1557440684023000}
+  beginL: {x: 0, y: 0, z: 0}
+  beginR: {x: 0, y: 0, z: 0}
+  distance: 0.87
 --- !u!114 &114954508915665260
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -17485,4 +17516,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38916179655ce514c8357a197d37654d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 3
+  itemId: 2

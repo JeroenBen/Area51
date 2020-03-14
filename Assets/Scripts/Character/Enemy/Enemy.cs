@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 
 public class Enemy : Character {
-
+	public static List<Enemy> enemies = new List<Enemy>();
 	public float detectRadius, normalStoppingDistance, viewAngle, giveUpTime, shootingRadius, lookAroundSpeed, lookAroundTime;
 	public Color followColor, patrollingColor;
 	public List<Transform> patrolPoints;
@@ -13,9 +13,11 @@ public class Enemy : Character {
 	public GameObject curWeapon;
 	public Quaternion weaponRotation;
 	public override void InitCharacter() {
+
 		NavMeshAgent navMeshAgent = GetComponent<NavMeshAgent>();
 		navMeshAgent.autoBraking = true;
 		weaponRotation = curWeapon.transform.localRotation;
+		enemies.Add(this);
 	}
 
 	public override void ChangeHealth(int amount) {

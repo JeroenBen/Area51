@@ -9944,9 +9944,8 @@ Prefab:
     - target: {fileID: 114560508929947714, guid: 6e4923c967735e8469e8e7431229b18e,
         type: 2}
       propertyPath: m_Text
-      value: 'This lift leads underground to Area 51. Don''t enter!
-
-'
+      value: "This lift leads underground to Area 51. When guards see you, the doors
+        close. Don't enter! \n"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6e4923c967735e8469e8e7431229b18e, type: 2}
@@ -22443,9 +22442,9 @@ Prefab:
     - target: {fileID: 114560508929947714, guid: 6e4923c967735e8469e8e7431229b18e,
         type: 2}
       propertyPath: m_Text
-      value: 'Use WASD to move
+      value: 'Use WASD to move.
 
-        To look around, use the mouse
+        To look around, use the mouse.
 
 '
       objectReference: {fileID: 0}
