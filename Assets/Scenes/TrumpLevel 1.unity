@@ -3678,11 +3678,6 @@ Prefab:
       propertyPath: m_LocalPosition.x
       value: 8.56
       objectReference: {fileID: 0}
-    - target: {fileID: 114890917792193000, guid: a181fe9015a2b954fa639c3e9c0e8c3b,
-        type: 2}
-      propertyPath: itemid
-      value: 4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a181fe9015a2b954fa639c3e9c0e8c3b, type: 2}
   m_IsPrefabParent: 0
@@ -18871,6 +18866,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114052402278188854, guid: 299817e1693c51b48941ce4fb601fd46,
+        type: 2}
+      propertyPath: beginItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4138134838345148, guid: 299817e1693c51b48941ce4fb601fd46, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -18960,6 +18960,11 @@ Prefab:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 8f30a7e24a474f74bbe9341ce4d4d57b, type: 3}
+    - target: {fileID: 114052402278188854, guid: 299817e1693c51b48941ce4fb601fd46,
+        type: 2}
+      propertyPath: beginItems.Array.data[0]
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 299817e1693c51b48941ce4fb601fd46, type: 2}
   m_IsPrefabParent: 0
