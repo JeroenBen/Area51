@@ -8242,6 +8242,11 @@ Prefab:
       propertyPath: rolloffMode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114182781471745708, guid: 3f7eb1875e4b46c4c975d489de8de4a9,
+        type: 2}
+      propertyPath: itemid
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f7eb1875e4b46c4c975d489de8de4a9, type: 2}
   m_IsPrefabParent: 0
@@ -9835,6 +9840,117 @@ Transform:
   m_Father: {fileID: 1502025839}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &596359878
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 224853272239341140, guid: 6e4923c967735e8469e8e7431229b18e,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224853272239341140, guid: 6e4923c967735e8469e8e7431229b18e,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224853272239341140, guid: 6e4923c967735e8469e8e7431229b18e,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 199.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 224853272239341140, guid: 6e4923c967735e8469e8e7431229b18e,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224853272239341140, guid: 6e4923c967735e8469e8e7431229b18e,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224853272239341140, guid: 6e4923c967735e8469e8e7431229b18e,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224853272239341140, guid: 6e4923c967735e8469e8e7431229b18e,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224853272239341140, guid: 6e4923c967735e8469e8e7431229b18e,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 179
+      objectReference: {fileID: 0}
+    - target: {fileID: 224853272239341140, guid: 6e4923c967735e8469e8e7431229b18e,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 418.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 224853272239341140, guid: 6e4923c967735e8469e8e7431229b18e,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 224853272239341140, guid: 6e4923c967735e8469e8e7431229b18e,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 224853272239341140, guid: 6e4923c967735e8469e8e7431229b18e,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 224853272239341140, guid: 6e4923c967735e8469e8e7431229b18e,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224853272239341140, guid: 6e4923c967735e8469e8e7431229b18e,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224853272239341140, guid: 6e4923c967735e8469e8e7431229b18e,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224853272239341140, guid: 6e4923c967735e8469e8e7431229b18e,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224853272239341140, guid: 6e4923c967735e8469e8e7431229b18e,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224853272239341140, guid: 6e4923c967735e8469e8e7431229b18e,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1570673048783088, guid: 6e4923c967735e8469e8e7431229b18e, type: 2}
+      propertyPath: m_Name
+      value: Information (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114560508929947714, guid: 6e4923c967735e8469e8e7431229b18e,
+        type: 2}
+      propertyPath: m_Text
+      value: 'This lift leads underground to Area 51. Don''t enter!
+
+'
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 6e4923c967735e8469e8e7431229b18e, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &610767662
 GameObject:
   m_ObjectHideFlags: 0
@@ -13299,6 +13415,11 @@ Prefab:
         type: 2}
       propertyPath: isPlayerWeapon
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114182781471745708, guid: 3f7eb1875e4b46c4c975d489de8de4a9,
+        type: 2}
+      propertyPath: itemid
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f7eb1875e4b46c4c975d489de8de4a9, type: 2}
@@ -18655,6 +18776,11 @@ Prefab:
       propertyPath: isPlayerWeapon
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114182781471745708, guid: 3f7eb1875e4b46c4c975d489de8de4a9,
+        type: 2}
+      propertyPath: itemid
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f7eb1875e4b46c4c975d489de8de4a9, type: 2}
   m_IsPrefabParent: 0
@@ -19749,6 +19875,11 @@ Prefab:
       propertyPath: isPlayerWeapon
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114182781471745708, guid: 3f7eb1875e4b46c4c975d489de8de4a9,
+        type: 2}
+      propertyPath: itemid
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f7eb1875e4b46c4c975d489de8de4a9, type: 2}
   m_IsPrefabParent: 0
@@ -19965,6 +20096,11 @@ Prefab:
         type: 2}
       propertyPath: isPlayerWeapon
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114182781471745708, guid: 3f7eb1875e4b46c4c975d489de8de4a9,
+        type: 2}
+      propertyPath: itemid
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f7eb1875e4b46c4c975d489de8de4a9, type: 2}
@@ -22307,7 +22443,7 @@ Prefab:
     - target: {fileID: 114560508929947714, guid: 6e4923c967735e8469e8e7431229b18e,
         type: 2}
       propertyPath: m_Text
-      value: 'WASD to move
+      value: 'Use WASD to move
 
         To look around, use the mouse
 

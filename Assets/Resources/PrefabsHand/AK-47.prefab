@@ -11840,4 +11840,5 @@ MonoBehaviour:
   sound: {fileID: 8300000, guid: ba1dc9cf1def5f440abf0ccb150d8215, type: 3}
   speed: 60
   firerate: 8
+  itemid: 4
   isPlayerWeapon: 1
