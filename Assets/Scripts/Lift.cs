@@ -27,11 +27,11 @@ public class Lift : MonoBehaviour {
 
 	void FixedUpdate() {
 		bool angry = false;
-		if (Enemy.enemies != null) {
-			angry = Enemy.enemies.Exists(x => x.State is FollowPlayer);
+		if (LevelManager.Instance.enemies != null) {
+			angry = LevelManager.Instance.enemies.Exists(x => x.State is FollowPlayer);
 		}
 		if (angry) {
-			print("ENEMY IS ANGRY");
+			//print("ENEMY IS ANGRY");
 		}
 		MoveDoors(angry);
 	}

@@ -8,6 +8,8 @@ public class LevelManager : MonoBehaviour
     private static LevelManager _instance;
     [SerializeField]
     private Player _player;
+
+    public List<Enemy> enemies;
     public Player Player
     {
         get
