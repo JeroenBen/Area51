@@ -84,7 +84,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1099305633796608
 GameObject:
   m_ObjectHideFlags: 0
@@ -1039,7 +1039,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 91ac08df9d623fd49be77669d64e2702, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7113acf494c0a6445b7338c1db7cb326, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1151,6 +1151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterItems: []
+  beginItems: 07000000
   itemDatabase: {fileID: 114266200586930744}
   inventoryUI: {fileID: 114138202254374846}
   DeathScreen: {fileID: 1381313088996876}
@@ -2814,6 +2815,8 @@ MonoBehaviour:
   jumpforce: 300
   maxjumptime: 4
   jumpStart: 0.1
+  toosteep: 1000
+  sphereCastRadius: 0
   deathScreen: {fileID: 1381313088996876}
   winScreen: {fileID: 1843189339836426}
   curItem: {fileID: 0}
@@ -3146,6 +3149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _player: {fileID: 114726624046875840}
+  enemies: []
 --- !u!114 &114946185075743770
 MonoBehaviour:
   m_ObjectHideFlags: 1

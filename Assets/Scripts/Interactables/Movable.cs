@@ -26,29 +26,29 @@ public class Movable : MonoBehaviour {
     }
 
     public void Update() {
-        float dx = 0, dy = 0, dz = 0;
+        float ddx = 0, ddy = 0, ddz = 0;
 
         if(Mathf.Abs(this.dx) >= minspeed) {
-            dx = Mathf.Sign(this.dx) * Mathf.Max(this.minspeed, Mathf.Abs(this.dx) * this.speed);
+            ddx = Mathf.Sign(this.dx) * Mathf.Max(this.minspeed, Mathf.Abs(this.dx) * this.speed);
         } else {
-            dx = this.dx;
+            ddx = this.dx;
         }
         if(Mathf.Abs(this.dy) >= minspeed) {
-            dy = Mathf.Sign(this.dy) * Mathf.Max(this.minspeed, Mathf.Abs(this.dy) * this.speed);
+            ddy = Mathf.Sign(this.dy) * Mathf.Max(this.minspeed, Mathf.Abs(this.dy) * this.speed);
         } else {
-            dy = this.dy;
+            ddy = this.dy;
         }
         if(Mathf.Abs(this.dz) >= minspeed) {
-            dz = Mathf.Sign(this.dz) * Mathf.Max(this.minspeed, Mathf.Abs(this.dz) * this.speed);
+            ddz = Mathf.Sign(this.dz) * Mathf.Max(this.minspeed, Mathf.Abs(this.dz) * this.speed);
         } else {
-            dz = this.dz;
+            ddz = this.dz;
         }
 
-        this.dx -= dx;
-        this.dy -= dy;
-        this.dz -= dz;
+        this.dx -= ddx;
+        this.dy -= ddy;
+        this.dz -= ddz;
 
-        Vector3 move = new Vector3(dx, dy, dz);
+        Vector3 move = new Vector3(ddx, ddy, ddz);
         transform.position += move;
     }
 }

@@ -16,6 +16,7 @@ public class Enemy : Character {
 		NavMeshAgent navMeshAgent = GetComponent<NavMeshAgent>();
 		navMeshAgent.autoBraking = true;
 		weaponRotation = curWeapon.transform.localRotation;
+		print(weaponRotation.eulerAngles);
 		LevelManager.Instance.enemies.Add(this);
 	}
 
@@ -51,8 +52,8 @@ public class Enemy : Character {
 		if (Physics.Raycast(ray, out hit, distance+1)) {
 
 			if (hit.transform.GetComponent<Player>() != null) {
-				curWeapon.transform.rotation = weaponRotation*Quaternion.LookRotation(dir.normalized, Vector3.up);
-				return true; ;
+				curWeapon.transform.rotation = Quaternion.LookRotation(dir.normalized, Vector3.up) * weaponRotation;
+				return true;
 			}
 			else {
 				print("Something is between my gun and the player");
@@ -60,7 +61,7 @@ public class Enemy : Character {
 			}
 
 		}
-		curWeapon.transform.rotation = weaponRotation * Quaternion.LookRotation(dir.normalized, Vector3.up);
+		curWeapon.transform.rotation = Quaternion.LookRotation(dir.normalized, Vector3.up) * weaponRotation;
 		print("noRaycast");
 		return true;
 			

@@ -8,14 +8,21 @@ public class Lift : MonoBehaviour {
 	public GameObject doorL, doorR;
 	public Vector3 beginL, beginR;
 	public float distance;
+	public bool playerInside;
 	private void OnTriggerEnter(Collider other) {
-		print("Something Entered");
 		if (other.gameObject.GetComponent<Player>() != null) {
-
+			playerInside = true;
 			CheckWincondition();
 		}
 	}
+
+	private void OnTriggerExit(Collider other) {
+		if (other.gameObject.GetComponent<Player>() != null) {
+			playerInside = false; ;
+		}
+	}
 	void Start() {
+		playerInside = false;
 		beginL = doorL.transform.position;
 		beginR = doorR.transform.position;
 	}
@@ -33,7 +40,7 @@ public class Lift : MonoBehaviour {
 		if (angry) {
 			//print("ENEMY IS ANGRY");
 		}
-		MoveDoors(angry);
+		MoveDoors(angry&&!playerInside);
 	}
 
 	void MoveDoors(bool a) {

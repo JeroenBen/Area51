@@ -4946,7 +4946,7 @@ GameObject:
   - component: {fileID: 4908840390528412}
   - component: {fileID: 65244091475261372}
   - component: {fileID: 114366687316807210}
-  - component: {fileID: 114954508915665260}
+  - component: {fileID: 114174820751776426}
   m_Layer: 0
   m_Name: PlayerInLift
   m_TagString: Untagged
@@ -13400,8 +13400,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1666476327325216}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.977, z: -1.56}
-  m_LocalScale: {x: 2.5098655, y: 1.7751524, z: 0.51749134}
+  m_LocalPosition: {x: 0, y: 0.977, z: -1.148}
+  m_LocalScale: {x: 2.5098655, y: 1.7751524, z: 1.4692866}
   m_Children: []
   m_Father: {fileID: 4400758369770382}
   m_RootOrder: 0
@@ -17488,6 +17488,17 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114174820751776426
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1666476327325216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1723dd65475cec44aafdfedbf93fb7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114366687316807210
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -17499,21 +17510,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3a0b0cd1c467c74795fb158a81195fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winCondition: {fileID: 114954508915665260}
+  winCondition: {fileID: 114174820751776426}
   doorL: {fileID: 1939389220276666}
   doorR: {fileID: 1557440684023000}
   beginL: {x: 0, y: 0, z: 0}
   beginR: {x: 0, y: 0, z: 0}
   distance: 0.87
---- !u!114 &114954508915665260
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1666476327325216}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38916179655ce514c8357a197d37654d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 2
+  playerInside: 0
