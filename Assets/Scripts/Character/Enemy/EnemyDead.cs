@@ -14,8 +14,10 @@ public class EnemyDead : State {
 
     }
     public override void OnStateEnter() {
-        Item item = ItemDatabase.main.GetItem(enemy.curWeapon.GetComponent<Weapon>().itemid);
-        drop(item);
+		if(enemy.curWeapon.GetComponent<Weapon>().itemid>=0) {
+			Item item = ItemDatabase.main.GetItem(enemy.curWeapon.GetComponent<Weapon>().itemid);
+			drop(item);
+		}
 		LevelManager.Instance.enemies.Remove(enemy);
 		enemy.destroySelfAfter(5);
 		enemy.GetComponent<NavMeshAgent>().enabled = false;

@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 2
-  damage: 10
+  damage: 6
   destroyOnCharacterHit: 1
   destroyOnAnyHit: 1
   start: {x: 0, y: 0, z: 0}
