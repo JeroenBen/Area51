@@ -15,7 +15,7 @@ public class RandomSounds : MonoBehaviour
 	}
 	// Update is called once per frame
 	void FixedUpdate() {
-		if (timer <= 0) {
+		if (timer <= 0 && sounds.Count!=0) {
 			source.PlayOneShot(sounds[Random.Range(0, sounds.Count)]);
 
 			timer = wait + (int)(Random.value * randomSpread);
