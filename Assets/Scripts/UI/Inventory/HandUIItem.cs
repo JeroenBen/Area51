@@ -11,6 +11,7 @@ public class HandUIItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHand
     public UIItem selectedItem;
     public DisplayTekst displayTekst;
     public GameObject ItemTextbox;
+    public GameObject iconHand;
 
     public void Awake() { 
         spriteImage = GetComponent<Image>();
@@ -24,8 +25,10 @@ public class HandUIItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHand
         if (this.item != null) {
             spriteImage.color = Color.white;
             spriteImage.sprite = this.item.icon;
+            iconHand.SetActive(false);
         } else {
             spriteImage.color = Color.clear;
+            iconHand.SetActive(true);
         }
     }
 
@@ -43,7 +46,6 @@ public class HandUIItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHand
             if (player.curItem != null) {
                 Destroy(player.curItem);
             }
-            Debug.Log("je kaolo hand is leeg");
         }
     }
 
