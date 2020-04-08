@@ -11,6 +11,7 @@ public class PlayerLook : MonoBehaviour {
 
     private void Awake() {
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         playerCamera.GetComponent<Camera>().fieldOfView = fovNormal;
     }
 

@@ -49,9 +49,11 @@ public class Inventory : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E)&&!DeathScreen.activeSelf) {
             if (inventoryUI.gameObject.activeSelf) {
                 Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
                 LevelManager.Instance.Player.GetComponent<PlayerLook>().lockcamera(false);
             } else {
                 Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
                 LevelManager.Instance.Player.GetComponent<PlayerLook>().lockcamera(true);
 
             }

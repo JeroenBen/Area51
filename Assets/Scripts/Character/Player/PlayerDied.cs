@@ -18,6 +18,7 @@ public class PlayerDied : State {
         m_Rigidbody.constraints = RigidbodyConstraints.None;
         m_Rigidbody.AddTorque(player.transform.forward * 10f);
         Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         player.GetComponent<PlayerLook>().mouseSensitivity = 0;
         player.deathScreen.SetActive(true);
         player.deathScreen.GetComponent<DarkenScreen>().FadeToAlpha(0.9f, 5);

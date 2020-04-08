@@ -15,6 +15,7 @@ public class PlayerWon : State {
         // Unlock the player
         Time.timeScale = 0f;
         Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         player.GetComponent<PlayerLook>().mouseSensitivity = 0;
         player.winScreen.SetActive(true);
         player.winScreen.GetComponent<DarkenScreen>().FadeToAlpha(0.9f, 5);

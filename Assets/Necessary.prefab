@@ -904,7 +904,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1621254806873738}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.28, y: 1.1, z: 2.94}
+  m_LocalPosition: {x: 392.3, y: 3.6, z: 150.83}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4275077056833312}
@@ -1841,12 +1841,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1657041982776244}
-        m_MethodName: 
+      - m_Target: {fileID: 114601250680340554}
+        m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1906,7 +1906,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterItems: []
-  beginItems: 07000000
+  beginItems: 
   itemDatabase: {fileID: 114264766600649030}
   inventoryUI: {fileID: 114833939352386956}
   DeathScreen: {fileID: 1304141908798144}

@@ -13701,6 +13701,41 @@ Prefab:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 224511069666346872, guid: fb74035b7cfcf4d45a9e7805552e107c,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224511069666346872, guid: fb74035b7cfcf4d45a9e7805552e107c,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224511069666346872, guid: fb74035b7cfcf4d45a9e7805552e107c,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224511069666346872, guid: fb74035b7cfcf4d45a9e7805552e107c,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224511069666346872, guid: fb74035b7cfcf4d45a9e7805552e107c,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224511069666346872, guid: fb74035b7cfcf4d45a9e7805552e107c,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224989628379624958, guid: fb74035b7cfcf4d45a9e7805552e107c,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fb74035b7cfcf4d45a9e7805552e107c, type: 2}
   m_IsPrefabParent: 0
@@ -28880,6 +28915,12 @@ Transform:
   m_Father: {fileID: 249141073}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1237077648 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114983892257019650, guid: fb74035b7cfcf4d45a9e7805552e107c,
+    type: 2}
+  m_PrefabInternal: {fileID: 629782197}
+  m_Script: {fileID: 11500000, guid: 97fbaf77e43c90345a6e09abb4823103, type: 3}
 --- !u!1 &1237203228
 GameObject:
   m_ObjectHideFlags: 0
@@ -29742,7 +29783,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9f42177ef314f74e87e04e43879003f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hand: {fileID: 0}
+  hand: {fileID: 1237077648}
   movable: {fileID: 1209422867}
 --- !u!65 &1349260453
 BoxCollider:
