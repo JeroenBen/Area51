@@ -28,9 +28,7 @@ public class LevelManager : MonoBehaviour
 
     void Awake()
     {
-        if (_instance == null) {
+        print("Added Instance");
             _instance = this;
-        }
-        
     }
 }
